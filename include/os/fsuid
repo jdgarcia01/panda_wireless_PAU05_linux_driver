@@ -1,0 +1,2 @@
+rt_linux.h:        current->state = TASK_RUNNING; \
+rt_linux.h:#define RT_GET_OS_PID(_x, _y)		do{rcu_read_lock(); _x=(ULONG)current->pids[PIDTYPE_PID].pid; rcu_read_unlock();}while(0)
