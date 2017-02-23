@@ -1125,7 +1125,6 @@ static inline void __RtmpOSFSInfoChange(OS_FS_INFO * pOSFSInfo,
 #else     // For my implementation I am on Kernel 3.10 
           /*
            * Added by John Garcia john.d.garcia01@gmail.com
-           * added the .val 
            */
 		pOSFSInfo->fsuid = current_fsuid().val;
 		pOSFSInfo->fsgid = current_fsgid().val;
